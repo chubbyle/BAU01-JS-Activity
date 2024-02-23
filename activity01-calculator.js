@@ -8,7 +8,7 @@
 
 let firstNumber = prompt("What is your first number?");
 firstNumber = Number(firstNumber);
-let operator = prompt("Please choose an operator ( +, -, *, or /");
+let operator = prompt("Please choose an operator ( +, -, *, or /)");
 let secondNumber = prompt("What is your second number?");
 secondNumber = Number(secondNumber);
 
@@ -19,9 +19,13 @@ function calculate(firstNumber, operator, secondNumber) {
     console.log(firstNumber - secondNumber);
   } else if (operator == "*") {
     console.log(firstNumber * secondNumber);
-  } else {
+  } else if (operator == "/" && secondNumber != 0) {
     console.log(firstNumber / secondNumber);
+  } else {
+    console.log("Not a valid calculation. Please refresh the page to retry.");
   }
 }
 
 calculate(firstNumber, operator, secondNumber);
+
+//Solution using SWITCH.CASE
