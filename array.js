@@ -69,3 +69,19 @@ console.log(slicedFruits.length); //2
 let index = fruits.indexOf('Watermelon');
 console.log(index); //2
 
+//Looping thru array
+//for loop
+for (let i =0; i < fruits.length; i++) {
+    console.log("for loops: ", fruits[i]);
+}   //Corn
+    //Grapes
+    //Watermelon
+    //Mango
+
+//forEach loop
+fruits.forEach(function(fruit) {
+    console.log("forEach loop: ", fruit);
+})  //Corn
+    //Grapes
+    //Watermelon
+    //Mango
