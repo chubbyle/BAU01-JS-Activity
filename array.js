@@ -4,7 +4,7 @@
  * index - each item in an array is stored
  *      --always start at index[0]
  * 
- * in Terminal, type node filename.js
+ * in Terminal, type node filename.js, to clear, type 'clear'.
  */
 
 let fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
