@@ -68,11 +68,17 @@ console.log("Result5: " + result5);
 //Exercise 4: Function as a Parameter
 //  write a function called applyfunction that takes a function and an array as parameters. it should apply the given function to each element of the array and return a new array with the results.
 
-function applyFunction (isHappy, array){
-    return 0;
+function applyFunction (cubes, array){
+    return array.map(cubes);
 }
+
+let measures = [1, 2, 3, 4, 5];
+let cubed = applyFunction(x => x*x*x, measures);
+
+console.log("Applied cubed function new array: ", cubed);
 
 
 
 //Exercise 5: Callback Functions
 //   create a function getUserData that simulates fetching user data from a server. it should except a callback function as a parameter. call the callback function with a user object once the data is retrieved.
+
